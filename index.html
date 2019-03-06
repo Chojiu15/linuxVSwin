@@ -17,6 +17,9 @@
 <body>
   <!-- NAVBAR -->
   <div class="container_parent">
+    
+    <img src="img/banniere2.jpg" alt="banniere" class="banniere_img">
+    
     <div class="container_nav">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">L vs W</a>
@@ -65,15 +68,17 @@
               mollit
               anim id est laborum.
             </p>
+      </section>      
             <div class="container" style="margin-bottom: 20px">
-    
+              <section id="history">
                 <div class="card-deck">
                     <div class="card">
-           
-                      <img src="linux.png" class="card-img-top" class="mx-auto d-block" style="width:200px;" alt="logo_l">
+                      <div class="img-card">
+                        <img src="img/linux.png" class="card-img-top" class="mx-auto d-block" alt="logo_l">
+                      </div>
                      
                       <div class="card-body">
-                        <h5 class="card-title">Historique Linux</h5>
+                        <h4 class="card-title" style="text-align:center">Historique Linux</h4>
                         <p class="card-text">En 1991, l’étudiant finlandais Linus Torvalds, indisposé par la faible disponibilité du serveur 
                             informatique UNIX de l’université d'Helsinki, entreprend le développement d’un noyau de système d'exploitation, 
                             qui prendra le nom de « noyau Linux ».
@@ -81,26 +86,38 @@
                             Linus Torvalds choisit rapidement de publier son noyau sous licence GNU GPL. Cette décision rend compatibles 
                             juridiquement les systèmes GNU et Linux. Dès lors, pour combler le vide causé par le développement inachevé de Hurd, 
                             GNU et le noyau Linux sont associés pour former un nouveau système d'exploitation (parfois considéré comme variante de GNU). 
-                            : GNU/Linux ou Linux</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            : GNU/Linux ou Linux. C’est dans le monde des serveurs informatiques que GNU/Linux a eu le plus d’impact, notamment avec le 
+                            très populaire LAMP. Sur les serveurs, GNU/Linux a souvent été utilisé pour remplacer d’autres systèmes de type Unix ou éviter 
+                            l'achat de licences Windows NT et se retrouve être un des acteurs majeurs. Dès 2003, Microsoft semble faire appel lui-même 
+                            en partie à GNU/Linux</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
                       </div>
                     </div>
            
                     <div class="card">
-
-                      <img src="windows.png" class="card-img-top"class="mx-auto d-block"style="width:200px;" alt="logo_w">
+                      <div class="img-card">
+                        <img src="img/windows.png" class="card-img-top"class="mx-auto d-block" alt="logo_w">
+                      </div>
 
                       <div class="card-body">
-                        <h5 class="card-title">Historique Windows</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h4 class="card-title" style="text-align:center">Historique Windows</h4>
+                        <p class="card-text">En 19831, Microsoft annonçait le développement de Windows, une interface graphique (GUI) pour son système 
+                            d'exploitation MS-DOS. Le produit a évolué d'une simple interface à deux familles de système d'exploitation, chacune avec 
+                            sa codebase et son système de fichier. La famille de versions 3.x et 9x comprennent Windows 3.0, Windows 3.1x, Windows 95, 
+                            Windows 98, et Windows Me. Windows for Workgroups 3.11 a ajouté la gestion du réseau 32 bits. Windows 95 ajouta un meilleur 
+                            support des processeurs 32 bits (néanmoins, MS-DOS, une partie du noyau et certains utilitaires tel le défragmenteur de disque 
+                            restèrent en 16 bits). Windows 95 ajouta également une nouvelle interface orientée, qui est encore en partie utilisée aujourd'hui.                           
+                            La famille Windows NT a commencé avec Windows NT 3.1 en 1993. Les versions modernes de Windows sont basées sur le noyau Windows NT 
+                            (qui fut initialement pensé pour OS/2). Windows fonctionne sur architectures IA-32, x86-64, et ARM 32-bit (ARMv7)2,3. Des versions 
+                            plus anciennes fonctionnent sur i860, Alpha, MIPS, Fairchild Clipper, PowerPC, et Itanium.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
                       </div>           
                     </div>
                   </div>
                 </div>           
-
+              </section>
             <div class="img_combat">
-              <img class="img-responsive" src="linux-vs-windows.jpg" alt="l-vs-w" />
+              <img class="img-responsive col-8 offset-2" src="img/linux-vs-windows.jpg" alt="l-vs-w" />
             </div>
           </section>
         </div>  
@@ -200,6 +217,64 @@
           </section>
         </div>
       </section>
+    </div>
+
+    <div class="container">
+        <section id="synthese">
+          <div class="row">
+            <section class="col-sm-11" style="margin-left: 40px">
+              <p>
+                <h3>Synthese</h3>
+                Faisons donc une petite synthèse. Nous avons parlés de la simplicité d’utilisation, le support et la sécurité.
+                Concernant la simplicité d’utilisation, nous avons vus que les deux OS sont tous deux aussi simples d’utilisation 
+                pour un usage classique (comprendre bureautique). En revanche, c’est dans un usage plus avancé qu’ils se distinguent. 
+                En effet, Windows a une courbe d’apprentissage plus ou moins constante car toutes ses opérations utilisent des outils 
+                graphiques semblables et intuitifs, tandis que celle de GNU/Linux est plutôt exponentielle. Toutes les opérations de 
+                base y sont faisables avec des outils graphiques, mais les opérations plus complexes nécessitent l’usage du terminal.             
+                Concernant le support, la situation n’est pas aussi simple car elle dépend des logiciels. Il y a des équivalents GNU/Linux 
+                pour tous les logiciels courants sous Windows, mais ceux répondant à un usage plus spécifique n’en ont pas toujours. 
+                Quand à Wine, celui-ci ne peut pas tout faire, et s’il peut faire fonctionner des logiciels simples et certains jeux-vidéos, 
+                les performances seront souvent moins bonnes que sous Windows.                 
+                Pour la sécurité, il s’agit là du point le plus favorable à GNU/Linux, même si la sécurisation complète d’un système 
+                nécessite des connaissances avancées, rendant cette tâche inaccessible aux débutants. Cependant, une distribution GNU/Linux 
+                utilisée telle quelle reste tout de même plus sécurisée que Windows, car certaines choses comme le chiffrement y sont 
+                réalisables plus facilement. Enfin, rappelons que GNU/Linux est libre, et que Windows ne l’est pas, ce qui peut être un 
+                argument décisif, en fonction de vos valeurs personnelles. Un logiciel libre est librement analysable (ses sources sont ouvertes), 
+                librement partageable et librement modifiable, ce qui est avantageux tant d’un point de vue philosophique que technique. Vous 
+                pouvez voir les conférences de Richard Stallman (le créateur du projet GNU) si vous désirez en savoir plus sur cet aspect de 
+                GNU/Linux et du monde libre en général.                  
+                Pour résumer, le choix d’un OS se base sur une multitude de facteurs, et nous n’en avons évoqués ici qu’un très petit nombre. 
+                On peut préférer GNU/Linux pour son caractère libre ou sa communauté de développeurs très active, ou on peut préférer Windows 
+                pour l’accès qu’il permet à certains logiciels. Bien sur, on peut aussi avoir un dual boot pour utiliser les deux, ou utiliser 
+                une machine virtuelle.
+              </p>
+            </section>
+          </div>
+        </section>
+      </div>
+
+    <a class="btn btn-primary" data-toggle="modal" href="#modal-video"><i class="fa fa-play"></i> watch video</a>
+    <div class="modal fade" id="modal-video" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close <i class="fa fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+              <iframe frameborder="0" width="480" height="270" src="https://www.dailymotion.com/embed/video/x2p0yvc?autoPlay=1" allowfullscreen="" allow="autoplay"></iframe>
+            <p>Your video</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar footer -->
+    </div>
+    <div class="container-nav">
+    <nav class="navbar navbar-dark bg-dark" style="color: white">
+    <!-- Navbar content -->
+    Blog réalisé à la WCS Btz par le collectif HYS
+    <button class="btn_footer">About us</button>
+
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
