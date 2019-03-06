@@ -1,22 +1,184 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>linuxVSwindows</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>linuxVSwindows</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="container_parent">
+    <div class="container_nav">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">L vs W</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#presentation">Présentation<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#history">Historique</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#w_vs_l">Windows VS Linux</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#synthese">Synthèse</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
     <h1>Linux vs Windows</h1>
 
+    <div class="container">
+      <section id="presentation">
+        <div class="row">
+          <section class="col-sm-11" style="margin-left: 40px">
+            <p>
+              Bonjour à tous et bienvenue sur notre blog ! Nous avons souhaité vous parler d'un sujet faisant grand débat
+              Linux VS Windows.
+              Nombreux sont les avis divergeants, nous allons tenter ici de vous les présenter avec impartialité. Nous
+              aborderons d'abord l'historique
+              de chacun, ensuite un petit "combat" Windows VS Linux, puis pour finir une synthèse. Vous aurez également le
+              plaisir de retrouver nos présentations
+              sur la seconde page. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit
+              anim id est laborum.
+            </p>
+            <div class="img_combat">
+              <img class="img-responsive" src="linux-vs-windows.jpg" alt="l-vs-w" />
+            </div>
+          </section>
+        </div>  
+      </section>
+    <div class="container">
+      <section id="w_vs_l">
+        <div class="row">
+          <section class="col-sm-11" style="margin-left: 40px">
+            <p>
+              <h3>Résumé</h3>
+                Les fans de Linux disent que le système d'exploitation est supérieur en raison de l'accès open-source,
+                une meilleure gestion de son administration, et un niveau de sécurité strict. Les fans de Windows disent que
+                le système d'exploitation est supérieur en raison de sa facilité d'utilisation, sa compatibilité des
+                périphériques
+                et de l'utilisation de jeux voir en 3D.
+                Nous allons vous donner 5 points fondamentaux qui différencient ces 2 systèmes d'exploitation. Windows a
+                dominé
+                le marché pendant plusieurs années, et les utilisateurs Windows aiment l'interface graphique et la facilité
+                d'installation du matériel.
+                Linux a travers l'open Source a fait un gros travail d'ergonomie, avec des environnements bureaux tels-que
+                gnome 3 ou deepin,
+                qui rivalisent amplement avec Windows 8 ou 10. L'installation du matériel reste le point négatif chez Linux,
+                malgré l'énorme effort qui a été fait pour une plus grande compatibilité périphérique sur certaine
+                distribution tels- que Linux Mint.
+                Ces deux systèmes d'exploitation ont des avantages et des inconvénients, et certaines de ces différences
+                sont plus exagérées que les
+                fonctionnalités importantes. La diversité dans l'Open Source qui devrait être sa force et devenu sa
+                faiblesse par les partisans de systeme
+                (systemd, init.d), envrionnement bureaux (gnome, kde, unity..), paquets plus à jour (rolling release ou
+                freeze), qui échappent à Mme michu
+                de Windows ou MacOS.. Les OS UNIX (OpenBSD, FreeBSD et NetBSD), échappent à cette guerre des clans, chacun
+                sa branche, et chacun s'adresse
+                à un public particulier, et compatibilité commune.
+            </p>
+            <p>
+              <h3>1 - Open-Source versus Closed-Source</h3>
+                Microsoft protège depuis longtemps le code source du système d'exploitation de l'entreprise. Le problème
+                avec la fermeture du code source
+                est que seul Microsoft peut ajouter à la fonctionnalité du système d'exploitation. Cela inclut la recherche
+                de failles de sécurité ou de
+                problèmes avec le code. Avec l'open-source, n'importe quel codeur peut ajouter au système d'exploitation et
+                le personnaliser comme il veut.
+                Les failles de sécurité peuvent être trouvées par quiconque veut pirater le système. Le résultat final est
+                un système d'exploitation plus
+                sécurisé et plus stable tel que openSUSE ou Fédora.
+            </p>
+            <p>
+              <h3>2 - Accès à la ligne de commande</h3>
+                Linux a toujours été considéré comme le système d'exploitation en ligne de commande tandis que Microsoft
+                fait son interface utilisateur pour
+                une souris, concept de MacOS. Microsoft essaie de rendre l'interface plus conviviale, tandis que Linux
+                nécessite une certaine connaissance
+                de la ligne de commande pour configurer certains logiciels ou matériels. Dans l'ensemble, Linux s'adresse
+                aussi bien aux personnes qui
+                connaissent mieux les configurations de ligne de commande ou pas, avec des distributions tels-que Ubuntu,
+                Linux Mint.. Il existe plus
+                d'options avec la ligne de commande pour que les administrateurs réseau puissent en profiter.
+            </p>
+            <p>
+              <h3>3 - Communauté par rapport à l'assistance payante</h3>
+                Linux est un logiciel libre et gratuit avec des dizaines de forums de support communautaire. Cependant, ne
+                pas avoir ce soutien payé détourne
+                de nombreuses entreprises. Linux a encore beaucoup de partisans, mais les entreprises se tournent vers un
+                système d'exploitation avec le
+                support téléphonique d'un professionnel. Certains paquets Linux offrent un support payant, Redhat, Suse,
+                mais Microsoft a également des
+                équipes de support technique que vous appelez et payez pour le support. Encore une fois, cela revient à
+                avoir une meilleure compréhension
+                des ordinateurs et du matériel. Les administrateurs Linux peuvent généralement trouver des réponses de la
+                communauté. Microsoft a également
+                un forum de support, mais les administrateurs peuvent appeler Microsoft et obtenir le support de la société.
+            </p> 
+            <p>
+              <h3>4 - Liberté de licence</h3>
+                Microsoft a une politique stricte concernant la modification du code source ou la tentative d'ingénierie
+                inverse du code du système d'exploitation.
+                Toute modification apportée au système d'exploitation annule tout accord et Microsoft pourrait ne pas vous
+                aider. Depuis Linux est open-source,
+                vous avez un support pour les problèmes indépendamment des changements. Encore une fois, le support peut
+                être sur un forum, mais il existe un
+                support et vous ne violez aucune loi lorsque vous modifiez le code du système d'exploitation.
+            </p> 
+            <p>
+              <h3>5 - Intégration d'entreprise par rapport aux ordinateurs personnels</h3>
+                Bien que certains processus réseau backend utilisent Linux ou Unix, la plupart des entreprises préfèrent
+                Windows, car les utilisateurs connaissent
+                Windows. Les fans de Linux soutiendraient que Linux est aussi facile à utiliser, mais Windows domine
+                toujours le marché, et il est plus facile pour
+                les utilisateurs de s'acclimater à leurs nouveaux ordinateurs avec Windows. Bien que ces cinq raisons
+                n'incluent pas toutes les différences et le
+                battage publicitaire, elles couvrent ce qui est généralement considéré en particulier dans le monde de
+                l'entreprise lors du choix d'un système d'exploitation.
+                Mais les sociétés Open Source payante tel que RedHat et SUSE, tentent d'estomper ces différences, et
+                prennent de plus en plus de part de marché dans
+                les entreprises. N'oublions pas que + de 80% des serveurs sont Open Source (Linux ou Unix).
+            </p>
+          </section>
+        </div>
+      </section>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </div>
+</body>
+
 </html>
