@@ -1,8 +1,101 @@
-#test::-webkit-scrollbar
-{
-    width: 10em;
-    height: 2em;
-    overflow: auto;
-    display: block;
-    background-color: #aaa;
+.card{
+margin-top: 50px;
+
 }
+
+.alert {
+
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: auto;
+
+}
+
+
+
+@keyframes tipsy {
+    0 {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+  
+  body {
+    font-family: helvetica, arial, sans-serif;
+    background-color:rgb(43, 40, 40);
+  }
+  
+  a {
+    color:white;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  a:before,
+  a:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 15px solid green;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+  }
+  
+  a:before {
+    border-color:blue blue green green;
+    z-index: -1;
+  }
+  
+  a:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) green green;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+  }
+  
+
+  .card-title{
+      color:blue;
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 1.5s; 
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  
+  
+  .insta {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: auto;
+  }
